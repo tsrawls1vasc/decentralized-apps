@@ -1,0 +1,62 @@
+import random
+
+# Создаем пустое игровое поле
+board = [['O' for _ in range(5)] for _ in range(5)]
+
+# Функция для вывода игрового поля на экран
+def print_board(board):
+    for row in board:
+        print(" ".join(row))
+
+# Функция для размещения корабля на игровом поле
+def place_ship(board):
+    ship_row = random.randint(0, len(board) - 1)
+    ship_col = random.randint(0, len(board[0]) - 1)
+    board[ship_row][ship_col] = 'S'
+
+# Размещаем корабли игрока и компьютера
+print("Размещение кораблей игрока...")
+player_board = [['O' for _ in range(5)] for _ in range(5)]
+place_ship(player_board)
+
+print("Размещение кораблей компьютера...")
+computer_board = [['O' for _ in range(5)] for _ in range(5)]
+place_ship(computer_board)
+
+# Игровой процесс
+while True:
+    # Ход игрока
+    print("Ваша очередь!")
+    print_board(board)
+    guess_row = int(input("Введите номер строки (0-4): "))
+    guess_col = int(input("Введите номер столбца (0-4): "))
+
+    if computer_board[guess_row][guess_col] == 'S':
+        print("Поздравляем! Вы попали в корабль компьютера!")
+        computer_board[guess_row][guess_col] = 'X'
+        print_board(computer_board)
+    else:
+        print("Увы! Вы промахнулись.")
+        board[guess_row][guess_col] = 'X'
+        print_board(board)
+
+    # Проверка на окончание игры
+    if all('X' in row for row in computer_board):
+        print("Поздравляем! Вы победили!")
+        break
+
+    # Ход компьютера
+    print("Ход компьютера...")
+    comp_guess_row = random.randint(0, len(board) - 1)
+    comp_guess_col = random.randint(0, len(board[0]) - 1)
+
+    if player_board[comp_guess_row][comp_guess_col] == 'S':
+        print("Компьютер попал в ваш корабль!")
+        player_board[comp_guess_row][comp_guess_col] = 'X'
+    else:
+        print("Компьютер промахнулся.")
+
+    # Проверка на окончание игры
+    if all('X' in row for row in player_board):
+        print("Увы! Вы проиграли!")
+        break
