@@ -14,7 +14,7 @@ def place_ship(board):
     ship_col = random.randint(0, len(board[0]) - 1)
     board[ship_row][ship_col] = 'S'
 
-# Размещаем корабли игрока и компьютера/
+# Размещаем корабли игрока и компьютера
 print("Размещение кораблей игрока...")
 player_board = [['O' for _ in range(5)] for _ in range(5)]
 place_ship(player_board)
