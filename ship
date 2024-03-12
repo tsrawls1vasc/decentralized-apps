@@ -36,7 +36,7 @@ while True:
         computer_board[guess_row][guess_col] = 'X'
         print_board(computer_board)
     else:
-        print("Увы! Вы промахнулись.")
+        print("Увы! Вы промахнулись")
         board[guess_row][guess_col] = 'X'
         print_board(board)
 
