@@ -58,5 +58,5 @@ while True:
 
     # Проверка на окончание игры
     if all('X' in row for row in player_board):
-        print("Увы! Вы проиграли!")
+        print("Увы! Вы проиграли(")
         break
