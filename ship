@@ -15,7 +15,7 @@ def place_ship(board):
     board[ship_row][ship_col] = 'S'
 
 # Размещаем корабли игрока и компьютера
-print("Размещение кораблей игрока...")
+print("Размещение кораблей игрока")
 player_board = [['O' for _ in range(5)] for _ in range(5)]
 place_ship(player_board)
 
