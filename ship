@@ -23,7 +23,7 @@ print("Размещение кораблей компьютера...")
 computer_board = [['O' for _ in range(5)] for _ in range(5)]
 place_ship(computer_board)
 
-# Игровой процесс
+# Игровой процесс.
 while True:
     # Ход игрока
     print("Ваша очередь!")
