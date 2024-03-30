@@ -42,7 +42,7 @@ while True:
 
     # Проверка на окончание игры
     if all('X' in row for row in computer_board):
-        print("Поздравляем! Вы победили!")
+        print("Поздравляем! Вы победили")
         break
 
     # Ход компьютера
