@@ -40,7 +40,7 @@ while True:
         board[guess_row][guess_col] = 'X'
         print_board(board)
 
-    # Проверка на окончание игры
+    # Проверка на окончание игры.
     if all('X' in row for row in computer_board):
         print("Поздравляем! Вы победили")
         break
