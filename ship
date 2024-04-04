@@ -3,7 +3,7 @@ import random
 # Создаем пустое игровое поле,
 board = [['O' for _ in range(5)] for _ in range(5)]
 
-# Функция для вывода игрового поля на экран
+# Функция для вывода игрового поля на экран/
 def print_board(board):
     for row in board:
         print(" ".join(row))
