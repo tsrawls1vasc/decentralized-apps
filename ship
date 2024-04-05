@@ -54,7 +54,7 @@ while True:
         print("Компьютер попал в ваш корабль!")
         player_board[comp_guess_row][comp_guess_col] = 'X'
     else:
-        print("Компьютер промахнулся.")
+        print("Компьютер промахнулся")
 
     # Проверка на окончание игры
     if all('X' in row for row in player_board):
