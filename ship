@@ -32,7 +32,7 @@ while True:
     guess_col = int(input("Введите номер столбца (0-4): "))
 
     if computer_board[guess_row][guess_col] == 'S':
-        print("Поздравляем! Вы попали в корабль компьютера")
+        print("Поздравляем! Вы попали в корабль компьютера.")
         computer_board[guess_row][guess_col] = 'X'
         print_board(computer_board)
     else:
