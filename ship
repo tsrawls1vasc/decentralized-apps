@@ -8,7 +8,7 @@ def print_board(board):
     for row in board:
         print(" ".join(row))
 
-# Функция для размещения корабля на игровом поле
+# Функция для размещения корабля на игровом поле.
 def place_ship(board):
     ship_row = random.randint(0, len(board) - 1)
     ship_col = random.randint(0, len(board[0]) - 1)
