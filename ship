@@ -26,7 +26,7 @@ place_ship(computer_board)
 # Игровой процесс.
 while True:
     # Ход игрока
-    print("Ваша очередь!")
+    print("Ваша очередь")
     print_board(board)
     guess_row = int(input("Введите номер строки (0-4): "))
     guess_col = int(input("Введите номер столбца (0-4): "))
