@@ -46,7 +46,7 @@ while True:
         break
 
     # Ход компьютера
-    print("Ход компьютера...")
+    print("Ход компьютера")
     comp_guess_row = random.randint(0, len(board) - 1)
     comp_guess_col = random.randint(0, len(board[0]) - 1)
 
