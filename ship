@@ -1,4 +1,4 @@
-import random
+import random!!!
 
 # Создаем пустое игровое поле
 board = [['O' for _ in range(5)] for _ in range(5)].
