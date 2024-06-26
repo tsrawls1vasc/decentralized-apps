@@ -60,3 +60,6 @@ while True:
         print("Увы! Вы проиграли(")
         break
 
+
+
+
