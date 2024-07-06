@@ -59,4 +59,3 @@ while True:
     if all('X' in row for row in player_board):
         print("Увы! Вы проиграли(")
         break
-
